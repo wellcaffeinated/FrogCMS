@@ -30,7 +30,8 @@
  * @subpackage plugin.archive
  *
  * @author Philippe Archambault <philippe.archambault@gmail.com>
- * @version 1.0
+ * @author (Modified by) Jasper Palfree
+ * @version 1.5
  * @since Frog version 0.9.0
  * @license http://www.gnu.org/licenses/gpl.html GPL License
  * @copyright Philippe Archambault, 2008
@@ -40,12 +41,13 @@ Plugin::setInfos(array(
     'id'          => 'archive',
     'title'       => 'Archive', 
     'description' => 'Provides an Archive pagetype behaving similar to a blog or news archive.',
-    'version'     => '1.0.0',
-    'website'     => 'http://www.madebyfrog.com/',
-    'update_url'  => 'http://www.madebyfrog.com/plugin-versions.xml'
+    'version'     => '1.5.0',
+    'website'     => 'http://www.madebyfrog.com/'
 ));
 
 Behavior::add('archive', 'archive/archive.php');
 Behavior::add('archive_day_index', 'archive/archive.php');
 Behavior::add('archive_month_index', 'archive/archive.php');
 Behavior::add('archive_year_index', 'archive/archive.php');
+Behavior::add('archive_tag_index', 'archive/archive.php');
+
